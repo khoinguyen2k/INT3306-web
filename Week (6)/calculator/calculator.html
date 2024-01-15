@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="author" content="Tran Vo Khoi Nguyen 21020780">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Week 5 - Calculator</title>
+	<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<form name="Keypad" action>
+	<table>
+		<tr>
+			<td colspan="5"><input name="ReadOut" type="Text" size="21" value="0"
+												 title="Keyboard input"></td>
+		</tr>
+		<tr>
+			<td><input name="btnSeven" type="Button" value="7" onclick="NumPressed(7)"></td>
+			<td><input name="btnEight" type="Button" value="8" onclick="NumPressed(8)"></td>
+			<td><input name="btnNine" type="Button" value="9" onclick="NumPressed(9)"></td>
+
+			<td><input name="btnClear" type="Button" value="C" onclick="Clear()"></td>
+			<td><input name="btnClearEntry" type="Button" value="CE" onclick="ClearEntry()"></td>
+		</tr>
+		<tr>
+			<td><input name="btnFour" type="Button" value="4" onclick="NumPressed(4)"></td>
+			<td><input name="btnFive" type="Button" value="5" onclick="NumPressed(5)"></td>
+			<td><input name="btnSix" type="Button" value="6" onclick="NumPressed(6)"></td>
+			<td><input name="btnPlus" type="Button" value="+"
+									 onclick="Operation('+')"></td>
+			<td><input name="btnMinus" type="Button" value="-"
+									 onclick="Operation('-')"></td>
+		</tr>
+		<tr>
+			<td><input name="btnOne" type="Button" value="1" onclick="NumPressed(1)"></td>
+			<td><input name="btnTwo" type="Button" value="2" onclick="NumPressed(2)"></td>
+			<td><input name="btnThree" type="Button" value="3" onclick="NumPressed(3)"></td>
+			<td><input name="btnMultiply" type="Button" value="*"
+									 onclick="Operation('*')"></td>
+			<td><input name="btnDivide" type="Button" value="/"
+									 onclick="Operation('/')"></td>
+		</tr>
+		<tr>
+			<td><input name="btnZero" type="Button" value="0" onclick="NumPressed(0)"></td>
+			<td><input name="btnDecimal" type="Button" value="." onclick="Decimal()" style="font-size: larger; font-weight: bolder"></td>
+
+			<td><input name="btnNeg" type="Button" value="+/-" onclick="Neg()"></td>
+			<td><input name="btnPercent" type="Button" value="%" onclick="Percent()"></td>
+			<td><input name="btnEquals" type="Button" value="=" onclick="Operation('=')"></td>
+		</tr>
+	</table>
+</form>
+<p>C: clear all.<br>
+	CE: clear the most recent entry.
+</p>
+<script src="calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+#myframe {
+    height: 500px;
+    width: 100%;
+}
+
+.thucdon-binhthuong {
+    background-color: #cccccc;
+    border-left: solid 1px #dcdcdc;
+    border-right: solid 1px #dcdcdc;
+    border-top: solid 1px #dddddd;
+    border-bottom: solid 0 #dddddd;
+}
+
+.thucdon-duocchon {
+    background-color: #04aa6d;
+    border-left: solid 1px #dcdcdc;
+    border-right: solid 1px #dcdcdc;
+    border-top: solid 1px #dddddd;
+    border-bottom: solid 0 #dddddd;
+}
+
+.thucdon-dechuot {
+    background-color: #fcfcfc;
+    border-left: solid 1px #dcdcdc;
+    border-right: solid 1px #dcdcdc;
+    border-top: solid 1px #dddddd;
+    border-bottom: solid 0 #dddddd;
+    cursor: pointer;
+}

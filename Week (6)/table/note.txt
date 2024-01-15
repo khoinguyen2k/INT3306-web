@@ -1,0 +1,12 @@
+Các hàng chẵn được tô một màu, các hàng lẻ (trừ hàng tiêu đề) được tô một màu khác.
+
+Khi người dùng dê chuột đến hàng nào thì hàng này chuyển sang màu xanh lá cây (như dòng cuối trong hình), đồng thời con trỏ chuột chuyển sang dạng bàn tay.
+
+Khi người dùng đánh dấu một hộp kiểm nào đó thì dòng chứa hộp kiểm được tô vàng (như dòng thứ ba trong hình).
+Nếu người dùng bỏ đánh dấu hợp kiểm thì trả lại màu ban đầu cho dòng chứa hộp kiểm.
+
+Khi người dùng đánh dấu/bỏ đánh dấu vào hộp kiểm trên cùng/ở dòng đầu tiên thì tất cả các hộp kiểm khác đều được đánh dấu/bỏ đánh dấu theo.
+
+Khi người dùng đánh dấu tất cả các hộp kiểm ở dưới thì hộp kiểm ở dòng đầu tiên cũng được đánh dấu. Nếu còn ít nhất một hộp kiểm phía dưới chưa được đánh dấu thì hộp kiểm ở dòng đầu tiên cũng không được đánh dấu.
+
+Khi người dùng kích chuột vào dòng trừ dòng tiêu đề thì hiệu ứng tương tự kích chuột vào hộp kiểm ở dòng đó.

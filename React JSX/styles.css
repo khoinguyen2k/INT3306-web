@@ -1,0 +1,14 @@
+.box {
+    border: solid 1px red;
+    border-radius: 6px;
+    padding: 4px;
+    width: 60%;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.nodisplay {
+    display: none;
+}

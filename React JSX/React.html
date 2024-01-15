@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="author" content="Tran Vo Khoi Nguyen 21020780">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>React JSX</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="root"></div>
+<script src="react.min.js"></script>
+<script src="react-dom.min.js"></script>
+<script src="babel.min.js"></script>
+
+<script type="text/babel" src="Components/Product.jsx"></script>
+<script type="text/babel" src="Components/ProductList.jsx"></script>
+<script type="text/babel" src="Components/SearchBar.jsx"></script>
+<script type="text/babel" src="Components/SearchableProductList.jsx"></script>
+
+<script type="text/babel">
+
+    ReactDOM.render(
+        <SearchableProductList
+            products={[
+                {name: "Dell Laptops", description: "Laptops from Dell", isBookmarked: false},
+                {name: "Dell PCs", description: "PCs from Dell", isBookmarked: true},
+                {name: "HP Laptops", description: "Laptops from HP", isBookmarked: false}
+            ]}/>,
+        document.getElementById('root')
+    );
+
+</script>
+</body>
+</html>

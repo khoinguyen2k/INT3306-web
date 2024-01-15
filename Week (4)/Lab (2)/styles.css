@@ -1,0 +1,54 @@
+td {
+    font-family: arial;
+    font-size: 14px;
+    cursor: pointer;
+    color: #0000ff;
+}
+
+.portal-mod-td {
+    background-color: #dee3e7;
+
+    border-top: #fefefe 1px solid;
+    border-left: #fefefe 1px solid;
+    border-right: #c3c8cb 1px solid;
+    border-bottom: #c3c8cb 1px solid;
+
+    padding: 5px 0 5px 5px;
+
+    /*font-size: 14px;*/
+    font-family: verdana;
+    color: #21536a;
+    cursor: pointer;
+}
+
+.hover-portal-mod-td {
+    background-color: #f8fafc;
+
+    border-top: #fefefe 1px solid;
+    border-left: #fefefe 1px solid;
+    border-right: #c3c8cb 1px solid;
+    border-bottom: #c3c8cb 1px solid;
+
+    padding: 5px 0 5px 5px;
+
+    /*font-size: 14px;*/
+    font-family: verdana;
+    color: #21536a;
+    cursor: pointer;
+}
+
+.selected-portal-mod-td {
+    background-color: #00fafc;
+
+    border-top: #fefefe 1px solid;
+    border-left: #fefefe 1px solid;
+    border-right: #c3c8cb 1px solid;
+    border-bottom: #c3c8cb 1px solid;
+
+    padding: 5px 0 5px 5px;
+
+    /*font-size: 14px;*/
+    font-family: verdana;
+    color: #21536a;
+    cursor: pointer;
+}

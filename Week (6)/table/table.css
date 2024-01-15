@@ -1,0 +1,39 @@
+html {
+    font-size: 24px;
+}
+
+#tbl {
+    border: solid 2px #000000;
+    border-collapse: collapse;
+}
+
+#tbl td, th {
+    border: solid 1px #000000;
+    padding: 3px 6px;
+}
+
+#tbl thead {
+    background-color: #fc05a9;
+}
+
+/*Khi người dùng dê chuột đến hàng nào thì hàng này chuyển sang màu xanh lá cây (như dòng cuối trong hình),
+đồng thời con trỏ chuột chuyển sang dạng bàn tay.*/
+#tbl tbody tr:hover {
+    background-color: #00cb00;
+    cursor: pointer;
+}
+
+/*Các hàng chẵn được tô một màu, các hàng lẻ (trừ hàng tiêu đề) được tô một màu khác.*/
+tbody tr:nth-child(odd) {
+    background-color: #b0bbc7;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+/*Khi người dùng đánh dấu một hộp kiểm nào đó thì dòng chứa hộp kiểm được tô vàng (như dòng thứ ba trong hình).
+Nếu người dùng bỏ đánh dấu hợp kiểm thì trả lại màu ban đầu cho dòng chứa hộp kiểm.*/
+#tbl tbody tr.selectedr {
+    background-color: yellow;
+}

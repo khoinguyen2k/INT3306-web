@@ -1,0 +1,160 @@
+:root {
+    font-size: 18px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0;
+}
+
+form {
+    grid-column: 2/4;
+}
+
+form div {
+    margin-top: 5px;
+}
+
+/*text, textarea, password input*/
+form input[type=text], form input[type=password], form textarea {
+    padding: 5px;
+    border: 1px solid grey;
+    width: 250px;
+    background: #f1f1f1;
+}
+
+form input[type=text]:hover, form input[type=password]:hover, form textarea:hover {
+    background: #e1e1e1;
+}
+
+form input.TruongBatbuoc, form textarea.TruongBatbuoc {
+    background-color: #00ffff;
+}
+
+form input.TruongBatbuoc:hover, form textarea.TruongBatbuoc:hover {
+    background-color: #00dddd;
+}
+
+/* Nút bấm */
+form input[type=button] {
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type=button]:hover {
+    background: #0b7dda;
+}
+
+/* Nhãn và span báo lỗi */
+form label.HangMoi {
+    float: left;
+    width: 130px;
+}
+
+form span.Baoloi {
+    color: #ff0000;
+}
+
+/* Cắt trôi sau mỗi hàng */
+form br {
+    clear: both;
+}
+
+/* ----------------- Custom radio/checkbox ----------------- */
+/* Tạo khung chứa cho custom radio/checkbox */
+.checkbox-container, .radio-container {
+    position: relative; /* kết hợp với các nút con có position:absolute để định vị các nút con*/
+    cursor: pointer;
+    -webkit-user-select: none; /* không cho chọn text bên trong */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-left: 15px; /* custom radio/checkbox hiển thị trong vùng padding */
+}
+
+/* Không hiển thị nút radio/checkbox chuẩn */
+.checkbox-container input, .radio-container input {
+    position: absolute;
+    display: none;
+    cursor: pointer;
+}
+
+.nhap-khoa-dang-ky {
+    margin: 8px 0;
+}
+
+/* Tạo nền cho custom checkbox */
+.checkbox-container input ~ span.checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 13px;
+    width: 13px;
+    background-color: #a4a4a4;
+}
+
+/* và tạo tick cho custom checkbox. */
+.checkbox-container input ~ span.checkmark2 {
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 3px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: none;
+}
+
+/* Tạo nền cho custom radio */
+.radio-container input ~ span.checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 13px;
+    width: 13px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* và tạo tick cho custom radio. */
+.radio-container input ~ span.checkmark2 {
+    position: absolute;
+    display: none;
+    top: 7px;
+    left: 4px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* Đổi nền custom radio/checkbox khi có chuột qua. */
+.checkbox-container:hover input ~ span.checkmark,
+.radio-container:hover input ~ span.checkmark {
+    background-color: #ccc;
+}
+
+/* Khi radio/checkbox được chọn, đổi màu nền custom checkbox */
+.checkbox-container input:checked ~ span.checkmark,
+.radio-container input:checked ~ span.checkmark {
+    background-color: #2196F3;
+}
+
+/* đồng thời hiển thị tick cho custom radio/checkbox */
+.checkbox-container input:checked ~ span.checkmark2,
+.radio-container input:checked ~ .checkmark2 {
+    display: inline;
+}
+
+.nodisplay {
+    display: none;
+}
+

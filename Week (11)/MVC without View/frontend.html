@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MVC without View</title>
+	<meta name="author" content="Tran Vo Khoi Nguyen 21020780">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>Tổng hai số</h1>
+<div>
+	<label id="lx"></label>
+	<label id="plus"></label>
+	<label id="ly"></label>
+	<label id="equal"></label>
+	<label id="sum"></label>
+</div>
+
+<div>
+	x = <input title="x-input" type="number" id="x"/> <br/>
+	y = <input title="y-input" type="number" id="y"/> <br/><br/>
+	<input type="button" class="ajax-submit" value="Chấp nhận (AJAX)"/>
+	<input type="button" class="fetch-submit" value="Chấp nhận (Fetch)"/>
+</div>
+
+<script type="text/javascript" src="ajax.js"></script>
+<script>
+    document.querySelector(".ajax-submit").onclick = function () {
+
+        let xmlhttp = getXmlHttpObject();
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState === 4) {
+                // Nhận kết quả JSON
+                let v = xmlhttp.responseText;
+                if (v.length > 0) {
+                    // chuyển đổi thành đối tượng JavaScript
+                    let o = JSON.parse(v);
+                    // Cập nhật DOM
+                    document.getElementById("lx").innerHTML = o.x;
+                    document.getElementById("ly").innerHTML = o.y;
+                    document.getElementById("sum").innerHTML = o.sum;
+                    document.getElementById("plus").innerHTML = " + ";
+                    document.getElementById("equal").innerHTML = " = ";
+
+                    document.getElementById("x").value = o.x;
+                    document.getElementById("y").value = o.y;
+                }
+            }
+        };
+        xmlhttp.open("POST", "c.php", true);
+        xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xmlhttp.send("x=" + document.getElementById("x").value + "&y=" + document.getElementById("y").value);
+    };
+
+
+    document.querySelector(".fetch-submit").onclick = function () {
+        // Gửi POST request
+        fetch("c.php", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: "x=" + document.getElementById("x").value + "&y=" + document.getElementById("y").value
+        }).then(response => {
+            if (response.status === 200) { // Thành công
+                response.json().then(	// Dữ liệu nhận được là JSON
+                    o => {
+                        // Cập nhật DOM
+                        document.getElementById("lx").innerHTML = o.x;
+                        document.getElementById("ly").innerHTML = o.y;
+                        document.getElementById("sum").innerHTML = o.sum;
+                        document.getElementById("plus").innerHTML = " + ";
+                        document.getElementById("equal").innerHTML = " = ";
+
+                        document.getElementById("x").value = o.x;
+                        document.getElementById("y").value = o.y;
+                    }
+                );
+            }
+        });
+    };
+</script>
+</body>
+</html>

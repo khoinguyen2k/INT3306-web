@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta name="author" content="Tran Vo Khoi Nguyen 21020780">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Một vài thành phần của Bootstrap</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand active" href="home.html">My Site</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li><a href="page2.html">Page 2</a></li>
+				<li><a href="page3.html">Page 3</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Log out</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div id="home" style="padding-top:50px;">
+		<h3>Welcome to our website</h3>
+		<div class="panel-group" id="p">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<a data-toggle="collapse" data-parent="#p" href="#c1"> Content 1 </a>
+				</div>
+				<div id="c1" class="panel-collapse collapse">
+					<div class="panel-body">
+						Video provides a powerful way to help you prove your point.
+						When you click Online Video, you can paste in the embed code for the video you want to add.
+						You can also type a keyword to search online for the video that best fits your document.
+						To make your document look professionally produced, Word provides header, footer, cover page,
+						and text box designs that complement each other.
+						For example, you can add a matching cover page, header, and sidebar.
+						Click Insert and then choose the elements you want from the different galleries.
+						Themes and styles also help keep your document coordinated.
+						When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change
+						to match your new theme.
+						When you apply styles, your headings change to match the new theme.
+						Save time in Word with new buttons that show up where you need them.
+						To change the way a picture fits in your document, click it and a button for layout options
+						appears next to it.
+						When you work on a table, click where you want to add a row or a column, and then click the plus
+						sign.
+						Reading is easier, too, in the new Reading view.
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<a data-toggle="collapse" data-parent="#p" href="#c2"> Content 2 </a>
+				</div>
+				<div id="c2" class="panel-collapse collapse">
+					<div class="panel-body">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						Ad aliquam culpa, distinctio dolorum, facilis inventore ipsam, magnam minus molestias neque
+						nesciunt officia placeat provident quae sit totam ullam voluptas voluptatem?
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="page3">
+			<h3>Other content</h3>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<a data-toggle="collapse" href="#collapse1">Other content</a>
+				</div>
+				<div id="collapse1" class="panel-collapse collapse">
+					<div class="panel-body">
+						The sun was shining brightly, casting a warm glow over the picturesque landscape.
+						Birds chirped in the distance as a gentle breeze rustled through the trees.
+						The scent of freshly bloomed flowers filled the air, creating a delightful ambiance.
+						People strolled leisurely along the winding path, enjoying the beauty of nature.
+						Laughter echoed from a nearby picnic area, where families and friends gathered for a joyful
+						afternoon.
+						It was a perfect day for relaxation and rejuvenation, a moment of tranquility amidst the
+						bustling world.
+					</div>
+					<div class="panel-footer">Footer</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="page2">
+			<h3>Go somewhere</h3>
+			<div class="dropdown">
+				<button class="btn dropdown-toogle" data-toggle="dropdown"> Menu</button>
+				<ul class="dropdown-menu">
+					<li><a href="abc.htm">ABC page</a></li>
+					<li><a href="https://example.com" class="active">DEF website</a></li>
+					<li><a href="https://ghi.vn" class="disabled">GHI website</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+</body>
+</html>

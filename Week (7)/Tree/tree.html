@@ -1,0 +1,48 @@
+<html>
+<head>
+	<link rel="StyleSheet" type="text/css" href="tree.css"/>
+	<meta name="author" content="Tran Vo Khoi Nguyen 21020780">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+<body style='tab-interval:.5in'>
+
+<div>
+	<p><b>Cây thư mục</b></p>
+</div>
+
+<ul class="tree">
+	<li class="has-children"><img src="images/minus.gif" onclick="Folder_Toggle(this);"/><a href=""><img
+			src="images/folder.gif"/> Root</a>
+		<ul>
+			<li class="no-child"><a href=""><img src="images/folder.gif"/> Folder 1</a></li>
+			<li class="has-children"><img src="images/minus.gif" onclick="Folder_Toggle(this);"/><a
+					href=""><img src="images/folder.gif"/> Folder 2</a>
+				<ul>
+					<li class="no-child"><a href=""><img src="images/folder.gif"/> Folder 2-1</a></li>
+					<li class="has-children"><img src="images/minus.gif" onclick="Folder_Toggle(this);"/><a
+							href=""><img src="images/folder.gif"/> Folder 2-2</a>
+						<ul>
+							<li class="no-child"><a href=""><img src="images/folder.gif"/> Folder 2-2-1</a></li>
+							<li class="no-child"><a href=""><img src="images/folder.gif"/> Folder 2-2-2</a></li>
+						</ul>
+					</li>
+					<li class="no-child"><a href=""><img src="images/folder.gif"/> Folder 2-3</a></li>
+				</ul>
+			</li>
+			<li class="no-child"><a href=""><img src="images/folder.gif"/> Folder 3</a></li>
+			<li class="has-children"><img src="images/minus.gif" onclick="Folder_Toggle(this);"/><a
+					href=""><img src="images/folder.gif"/> Folder 4</a>
+				<ul>
+					<li class="no-child"><a href=""><img src="images/folder.gif"/> Folder 4-1</a></li>
+					<li class="no-child"><a href=""><img src="images/folder.gif"/> Folder 4-2</a></li>
+					<li class="no-child"><a href=""><img src="images/folder.gif"/> Folder 4-3</a></li>
+				</ul>
+			</li>
+			<li class="no-child"><a href=""><img src="images/folder.gif"/> Folder 5</a></li>
+		</ul>
+	</li>
+</ul>
+<script type="text/javascript" src="tree.js"></script>
+</body>
+</html>

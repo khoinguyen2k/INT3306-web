@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="author" content="Tran Vo Khoi Nguyen 21020780">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Week 5 - Form</title>
+	<link rel="StyleSheet" href="form.css"/>
+</head>
+<body>
+<form id="form1" method="post" action="">
+
+	<div class="nhap-ho-ten">
+		<label for="hoten" class="HangMoi">Họ tên:</label>
+		<input type="text" id="hoten" name="hoten" class="TruongBatbuoc"/>
+		<span id="loi_hoten" class="Baoloi"></span>
+		<br/>
+	</div>
+
+	<div class="nhap-dia-chi">
+		<label for="diachi" class="HangMoi">Địa chỉ:</label>
+		<input type="text" id="diachi" name="diachi"/>
+		<br/>
+	</div>
+
+	<div class="nhap-gioi-tinh">
+		<label class="HangMoi">Giới tính:</label>
+
+		<label class="radio-container">
+			<input type="radio" id="nam" name="gioitinh" checked="checked"/> Nam
+			<span class="checkmark"></span>
+			<span class="checkmark2"></span>
+		</label>
+
+		<label class="radio-container">
+			<input type="radio" id="nu" name="gioitinh"/> Nữ
+			<span class="checkmark"></span>
+			<span class="checkmark2"></span>
+		</label>
+		<br/>
+	</div>
+
+	<div class="nhap-ngay-sinh">
+		<label class="HangMoi">Ngày sinh:</label>
+		<input type="text" id="ngaysinh" name="ngaysinh" placeholder="nn/tt/nnnn" class="TruongBatbuoc"/>
+		<span id="loi_ngaysinh" class="Baoloi"></span>
+		<br/>
+	</div>
+
+	<div class="nhap-e-mail">
+		<label for="email" class="HangMoi">E-mail:</label>
+		<input type="text" id="email" name="email" class="TruongBatbuoc"/>
+		<span id="loi_email" class="Baoloi"></span>
+		<br/>
+	</div>
+
+	<div class="nhap-sdt">
+		<label for="codinh" class="HangMoi">Điện thoại:</label>
+		<input type="text" id="codinh" name="codinh"
+			   onkeyup="DoKeyup(event, this, 'english');"/>
+		<br/>
+	</div>
+
+	<div class="nhap-khoa-dang-ky">
+		<label class="HangMoi">Khóa đăng ký:</label>
+
+		<label class="checkbox-container">
+			<input type="checkbox" id="english" name="english"
+				   onkeyup="DoKeyup(event, this, 'quantri');"/> Tiếng Anh
+			<span class="checkmark"></span>
+			<span class="checkmark2"></span>
+		</label>
+
+		<label class="checkbox-container">
+			<input type="checkbox" id="quantri" name="quantri"
+				   onkeyup="DoKeyup(event, this, 'it');"/> Quản trị
+			<span class="checkmark"></span>
+			<span class="checkmark2"></span>
+		</label>
+
+		<label class="checkbox-container">
+			<input type="checkbox" id="it" name="it"
+				   onkeyup="DoKeyup(event, this, 'username');"/> CNTT
+			<span class="checkmark"></span>
+			<span class="checkmark2"></span>
+		</label>
+		<br/>
+
+	</div>
+
+	<div class="nhap-ten-su-dung">
+		<label for="username" class="HangMoi">Tên sử dụng:</label>
+		<input type="text" id="username" name="username" class="TruongBatbuoc"
+			   onkeyup="DoKeyup(event, this, 'pass');"/>
+		<span id="loi_username" class="Baoloi"></span>
+		<br/>
+	</div>
+
+	<div class="nhap-mat-khau">
+		<label for="pass" class="HangMoi">Mật khẩu:</label>
+		<input type="password" id="pass" name="pass" class="TruongBatbuoc"
+			   onkeyup="DoKeyup(event, this, 'repass');"/>
+		<span id="loi_pass" class="Baoloi"></span>
+		<br/>
+	</div>
+
+	<div class="nhap-lai-mat-khau">
+		<label for="repass" class="HangMoi">Gõ lại mật khẩu:</label>
+		<input type="password" id="repass" name="repass" class="TruongBatbuoc"
+			   onkeyup="DoKeyup(event, this, 'ghichu');"/>
+		<span id="loi_repass" class="Baoloi"></span>
+		<br/>
+	</div>
+
+	<div class="nhap-ghi-chu">
+		<label for="ghichu" class="HangMoi">Ghi chú:</label>
+		<textarea id="ghichu" name="ghichu" class="TruongBatbuoc"></textarea>
+		<br/>
+	</div>
+
+	<div class="anh-preview">
+		<label class="HangMoi">&nbsp;</label>
+		<img class="preview nodisplay" src="" style="height:200px;"/>
+		<br/>
+	</div>
+
+	<div class="tai-anh">
+		<label class="HangMoi">Ảnh chân dung:</label>
+		<input type="file" name="FileUpload1" id="FileUpload1" accept=".png,.jpg"/>
+		<br/>
+	</div>
+
+	<div class="submit-button">
+		<label class="HangMoi">&nbsp;</label>
+		<input type="button" onclick="Chapnhan();" value="Chấp nhận"/>
+		<input type="button" onclick="Boqua();" value="Bỏ qua"/>
+		<br/>
+	</div>
+</form>
+<script src="form.js"></script>
+</body>
+</html>

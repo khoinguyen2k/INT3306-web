@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta name="author" content="Tran Vo Khoi Nguyen 21020780">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="styles.css">
+	<title>Form jQuery</title>
+</head>
+
+<body>
+<h2>Đăng ký thành viên</h2>
+<form method="post" id="form1">
+	<label for="masv" class="newrow">Mã:</label>
+	<input type="text" name="masv" id="masv"/>
+	<span id="loi_masv" class="errornote"></span>
+	<br/>
+
+	<label for="hoten" class="newrow">Họ tên:</label>
+	<input type="text" name="hoten" id="hoten"/>
+	<span id="loi_hoten" class="errornote"></span>
+	<br/>
+
+	<label for="ngaysinh" class="newrow">Ngày sinh:</label>
+	<input type="text" name="ngaysinh" id="ngaysinh"/>
+	<span id="loi_ngaysinh" class="errornote"></span>
+	<br/>
+
+	<label for="gioitinh" class="newrow">Giới tính:</label>
+	<select id="gioitinh" name="gioitinh">
+		<option value="1" selected="selected">Nam</option>
+		<option value="0">Nữ</option>
+	</select>
+	<br/>
+
+	<label for="quequan" class="newrow">Quê quán:</label>
+	<input type="text" name="quequan" id="quequan"/>
+	<br/>
+
+	<label class="newrow">&nbsp;</label>
+	<input type="button" id="btnchapnhan" value="Chấp nhận"/>
+	<input type="button" value="Bỏ qua"/>
+</form>
+
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="formJquery.js"></script>
+<script type="text/javascript" src="util.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+html {
+    font-size: 24px;
+}
+
+input {
+    font-size: 16px;
+}
+
+.nodisplay {
+    display: none;
+}

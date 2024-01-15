@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta name="author" content="Tran Vo Khoi Nguyen 21020780">
+	<title>Form Bootstrap</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<style type="text/css">
+		span.errornote {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class=" col-md-2"></div>
+		<div class=" col-md-6"><h2>Form với Bootstrap và jQuery</h2></div>
+		<div class=" col-md-4"></div>
+	</div>
+	<form method="post" id="form1" class="form-horizontal">
+		<div class="form-group">
+			<label for="masv" class="control-label col-md-2">Mã:</label>
+			<div class="col-md-6">
+				<input type="text" name="masv" id="masv" class="form-control"/>
+			</div>
+			<div class="col-md-4">
+				<span id="loi_masv" class="errornote"></span>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="hoten" class="control-label col-md-2 ">Họ tên:</label>
+			<div class="col-md-6">
+				<input type="text" name="hoten" id="hoten" class="form-control"/>
+			</div>
+			<div class="col-md-4">
+				<span id="loi_hoten" class="errornote"></span>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="ngaysinh" class="control-label col-md-2">Ngày sinh:</label>
+			<div class="col-md-6">
+				<input type="text" name="ngaysinh" id="ngaysinh" class="form-control"/>
+			</div>
+			<div class="col-md-4">
+				<span id="loi_ngaysinh" class="errornote"></span>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="gioitinh" class="control-label col-md-2">Giới tính:</label>
+			<div class="col-md-6">
+				<select id="gioitinh" name="gioitinh">
+					<option value="1" selected="selected">Nam</option>
+					<option value="0">Nữ</option>
+				</select>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+		<div class="form-group">
+			<label for="quequan" class="control-label col-md-2">Quê quán:</label>
+			<div class="col-md-6">
+				<input type="text" name="quequan" id="quequan" class="form-control"/>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-md-2">&nbsp;</label>
+			<div class="col-md-6">
+				<input type="button" id="btnchapnhan" value="Chấp nhận" class="btn"/>
+				<input type="button" value="Bỏ qua" class="btn"/>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+	</form>
+</div>
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="formJquery.js"></script>
+<script type="text/javascript" src="util.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+html {
+	font-size: 17px;
+}
+
+table td, th{
+	border: solid 1px #000000;
+}
+
+table  {
+	border-collapse: collapse;
+}
+
+table.sortable td {
+	border: solid 1px #000000;
+}
+
+table.sortable th {
+	background-color: #cccccc;
+	border: solid 1px #000000;
+}
+
+table.sortable th.sortcol {
+	cursor:pointer;
+}
+
+table.sortable th.sortcol span.arrow::after {
+	content: "\2195";
+}
+
+table.sortable th.asc span.arrow::after {
+	content: "\2191";
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+}
+
+table.sortable th.desc span.arrow::after {
+	content: "\2193";
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+}

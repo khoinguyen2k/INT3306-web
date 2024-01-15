@@ -1,0 +1,12 @@
+html {
+    font-size: 18px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 6px;
+    border: solid 1px #000000;
+}

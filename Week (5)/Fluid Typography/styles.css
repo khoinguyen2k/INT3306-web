@@ -1,0 +1,74 @@
+div.image-box img {
+    width: 100%;
+}
+
+:root {
+    background-color: rgb(252, 250, 246);
+    font-family: arial, sans-serif, serif;
+}
+
+div.page {
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(34, 34, 34);
+}
+
+div.page p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+div.page h1 {
+    font-family: "Merriweather", serif;
+}
+
+/* Ti le cho cac phan tu dac biet */
+div.page h1 {
+    font-size: 1.5rem;
+}
+
+div.page div.image-caption {
+    font-size: 0.75rem;
+    padding-top: 0.5rem;
+}
+
+div.page {
+    max-width: 35rem;
+}
+
+/* width < 360px*/
+@media screen and (max-width: 359px) {
+    :root {
+        font-size: 16px;
+    }
+
+    div.page {
+        width: 100%;
+    }
+}
+
+/* width: 360px --> 767px */
+@media screen and (min-width: 360px) {
+    :root {
+        font-size: calc(16px + 2 * ((100vw - 360px) / 408));
+    }
+
+}
+
+/* width: 768px --> 1366px */
+@media screen and (min-width: 768px) {
+    :root {
+        font-size: calc(18px + 2 * ((100vw - 768px) / 598));
+    }
+}
+
+/* width: >= 1366px desktop */
+@media screen and (min-width: 1366px) {
+    :root {
+        font-size: 20px;
+    }
+}
+
+a {
+    text-decoration: none;
+}

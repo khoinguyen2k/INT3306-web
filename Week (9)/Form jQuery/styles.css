@@ -1,0 +1,21 @@
+html {
+    font-size: 20px;
+}
+
+form {
+    margin: auto;
+}
+
+label.newrow {
+    float: left;
+    width: 100px;
+    margin: 3px;
+}
+
+span.errornote {
+    color: red;
+}
+
+form br {
+    clear: both;
+}

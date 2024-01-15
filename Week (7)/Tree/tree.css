@@ -1,0 +1,24 @@
+html {
+    font-size: 24px;
+}
+
+ul.tree li {
+    list-style: none;
+}
+
+ul.tree li a {
+    text-decoration: none;
+}
+
+ul.tree li.has-children {
+    margin-left: 0;
+}
+
+ul.tree li.no-child {
+    margin-left: 16px;
+}
+
+ul.tree ul {
+    margin-left: 0;
+    padding-left: 15px;
+}
